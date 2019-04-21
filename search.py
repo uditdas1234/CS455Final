@@ -197,22 +197,22 @@ def iterativeDeepeningSearch(problem):
     curN = util.Stack()
     limit = 1;
     while True: 
-        visitedList = []
+        closedL = []
         curN.push((problem.getStartState(),[],0))
-        (state,toDirection,toCost) = curN.pop()
-        visitedList.append(state)
-        while not problem.isGoalState(state): 
-            successors = problem.getSuccessors(state) 
-            for son in successors:
-                if (not son[0] in visitedList) and (toCost + son[2] <= limit): 
-                    curN.push((son[0],toDirection + [son[1]],toCost + son[2])) 
-                    visitedList.append(son[0]) 
+        (curS,move,pathCost) = curN.pop()
+        closedL.append(curS)
+        while not problem.isGoalState(curS): 
+            successors = problem.getSuccessors(curS) 
+            for childN in successors:
+                if (not childN[0] in closedL) and (pathCost + childN[2] <= limit): 
+                    curN.push((childN[0],move + [childN[1]],pathCost + childN[2])) 
+                    closedL.append(childN[0]) 
             if curN.isEmpty(): 
                 break
-            (state,toDirection,toCost) = curN.pop()
-        if problem.isGoalState(state):
-            return toDirection
-        limit += 1 
+            (curS,move,pathCost) = curN.pop()
+        if problem.isGoalState(curS):
+            return move
+        limit += 1  
 # Abbreviations
 bfs = breadthFirstSearch
 dfs = depthFirstSearch
