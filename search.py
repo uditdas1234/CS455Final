@@ -12,10 +12,14 @@
 # Pieter Abbeel (pabbeel@cs.berkeley.edu).
 
 ################################################################################
-#Citation:                                                                     #
-#Credit                                                                        #
-#    http://ai.berkeley.edu/search.html                                        #
-#    https://github.com/richss/CS455-search-python/blob/master/uninformed.ipynb#
+#Citation:                                                                     
+#Credit                                                                        
+#    http://ai.berkeley.edu/search.html                                        
+#    https://github.com/richss/CS455-search-python/blob/master/uninformed.ipynb
+#    https://www.redblobgames.com/pathfinding/a-star/implementation.html
+#    https://gist.github.com/Kautenja/72cd5494adc12dcbfeea3e79e7b3c3ac
+#    http://code.activestate.com/recipes/576723-dfs-and-bfs-graph-traversal/
+#    https://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/
 ################################################################################
 """
 In search.py, you will implement generic search algorithms which are called by
@@ -93,10 +97,14 @@ def depthFirstSearch(problem):
     """
     "*** YOUR CODE HERE ***"
 ################################################################################
-#Citation:                                                                     #
-#Credit                                                                        #
-#    http://ai.berkeley.edu/search.html                                        #
-#    https://github.com/richss/CS455-search-python/blob/master/uninformed.ipynb#
+#Citation:                                                                     
+#Credit                                                                        
+#    http://ai.berkeley.edu/search.html                                        
+#    https://github.com/richss/CS455-search-python/blob/master/uninformed.ipynb
+#    https://www.redblobgames.com/pathfinding/a-star/implementation.html
+#    https://gist.github.com/Kautenja/72cd5494adc12dcbfeea3e79e7b3c3ac
+#    http://code.activestate.com/recipes/576723-dfs-and-bfs-graph-traversal/
+#    https://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/
 ################################################################################
     from game import Directions
 
@@ -123,10 +131,14 @@ def breadthFirstSearch(problem):
     """Search the shallowest nodes in the search tree first."""
     "*** YOUR CODE HERE ***"
 ################################################################################
-#Citation:                                                                     #
-#Credit                                                                        #
-#    http://ai.berkeley.edu/search.html                                        #
-#    https://github.com/richss/CS455-search-python/blob/master/uninformed.ipynb#
+#Citation:                                                                     
+#Credit                                                                        
+#    http://ai.berkeley.edu/search.html                                        
+#    https://github.com/richss/CS455-search-python/blob/master/uninformed.ipynb
+#    https://www.redblobgames.com/pathfinding/a-star/implementation.html
+#    https://gist.github.com/Kautenja/72cd5494adc12dcbfeea3e79e7b3c3ac
+#    http://code.activestate.com/recipes/576723-dfs-and-bfs-graph-traversal/
+#    https://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/
 ################################################################################
     curN = util.Queue()
     closedL = []
@@ -158,10 +170,14 @@ def aStarSearch(problem, heuristic=nullHeuristic):
     """Search the node that has the lowest combined cost and heuristic first."""
     "*** YOUR CODE HERE ***"
 ################################################################################
-#Citation:                                                                     #
-#Credit                                                                        #
-#    http://ai.berkeley.edu/search.html                                        #
-#    https://github.com/richss/CS455-search-python/blob/master/uninformed.ipynb#
+#Citation:                                                                     
+#Credit                                                                        
+#    http://ai.berkeley.edu/search.html                                        
+#    https://github.com/richss/CS455-search-python/blob/master/uninformed.ipynb
+#    https://www.redblobgames.com/pathfinding/a-star/implementation.html
+#    https://gist.github.com/Kautenja/72cd5494adc12dcbfeea3e79e7b3c3ac
+#    http://code.activestate.com/recipes/576723-dfs-and-bfs-graph-traversal/
+#    https://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/
 ################################################################################
     from game import Directions
     curN = util.PriorityQueue() 
@@ -188,10 +204,14 @@ def iterativeDeepeningSearch(problem):
     """This function is for the first of the grad students questions"""
     "*** MY CODE HERE ***"
 ################################################################################
-#Citation:                                                                     #
-#Credit                                                                        #
-#    http://ai.berkeley.edu/search.html                                        #
-#    https://github.com/richss/CS455-search-python/blob/master/uninformed.ipynb#
+#Citation:                                                                     
+#Credit                                                                        
+#    http://ai.berkeley.edu/search.html                                        
+#    https://github.com/richss/CS455-search-python/blob/master/uninformed.ipynb
+#    https://www.redblobgames.com/pathfinding/a-star/implementation.html
+#    https://gist.github.com/Kautenja/72cd5494adc12dcbfeea3e79e7b3c3ac
+#    http://code.activestate.com/recipes/576723-dfs-and-bfs-graph-traversal/
+#    https://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/
 ################################################################################
     from game import Directions
     curN = util.Stack()
