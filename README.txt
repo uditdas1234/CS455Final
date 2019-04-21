@@ -12,7 +12,10 @@ Files edited: search.py
 References:
 http://ai.berkeley.edu/search.html
 https://github.com/richss/CS455-search-python/blob/master/uninformed.ipynb
-
+https://www.redblobgames.com/pathfinding/a-star/implementation.html
+https://gist.github.com/Kautenja/72cd5494adc12dcbfeea3e79e7b3c3ac
+http://code.activestate.com/recipes/576723-dfs-and-bfs-graph-traversal/
+https://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/
 
 Depth-First Search:
 python pacman.py -l tinyMaze -p SearchAgent
